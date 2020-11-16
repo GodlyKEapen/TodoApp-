@@ -14,7 +14,7 @@ class _IntrayPageState extends State<IntrayPage> {
   Widget build(BuildContext context) {
     taskList = getList();
     return Container(
-      padding: EdgeInsets.only(top: 300),
+      padding: EdgeInsets.only(top: 250),
       color: darkGreyColor,
       child: _buildReorderableListSimple(context),
       //child: ReorderableListView(

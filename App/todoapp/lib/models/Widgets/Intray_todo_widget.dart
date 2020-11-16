@@ -11,7 +11,7 @@ class IntrayTodo extends StatelessWidget {
     return Container(
       key: Key(keyValue),
       margin: EdgeInsets.only(bottom: 5),
-      height: 100,
+      height: 80,
       decoration: BoxDecoration(
           color: redColor,
           borderRadius: BorderRadius.all(Radius.circular(10)),
