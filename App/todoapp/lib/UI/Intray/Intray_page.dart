@@ -2,26 +2,43 @@ import 'package:flutter/material.dart';
 import 'package:todoapp/models/Widgets/Intray_todo_widget.dart';
 import 'package:todoapp/models/classes/todoItem.dart';
 import 'package:todoapp/models/global.dart';
+import 'package:todoapp/bloc/blocs/user_bloc_provider.dart';
 
 class IntrayPage extends StatefulWidget {
+  final String apiKey;
+  IntrayPage({this.apiKey});
   @override
   _IntrayPageState createState() => _IntrayPageState();
 }
 
 class _IntrayPageState extends State<IntrayPage> {
   List<Task> taskList = [];
+  // TaskBloc tasksBloc;
+  @override
+  void dispose() {
+    tasksBloc.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    taskList = getList();
+    // taskList = getList();
     return Container(
-      padding: EdgeInsets.only(top: 250),
-      color: darkGreyColor,
-      child: _buildReorderableListSimple(context),
-      //child: ReorderableListView(
-      //  children: todoItems,
-      //  onReorder: _onReorder,
-      // ),
-    );
+        padding: EdgeInsets.only(top: 250),
+        color: darkGreyColor,
+        child: StreamBuilder(
+            stream: tasksBloc.getTasks,
+            initialData: 0,
+            builder: (context, snapshot) {
+              taskList = snapshot.data;
+              return _buildReorderableListSimple(context, taskList);
+            })
+
+        //child: ReorderableListView(
+        //  children: todoItems,
+        //  onReorder: _onReorder,
+        // ),
+        );
   }
 
   Widget _buildListTile(BuildContext context, Task item) {
@@ -33,7 +50,7 @@ class _IntrayPageState extends State<IntrayPage> {
     );
   }
 
-  Widget _buildReorderableListSimple(BuildContext context) {
+  Widget _buildReorderableListSimple(BuildContext context, List<Task> item) {
     return Theme(
       data: ThemeData(canvasColor: Colors.transparent),
       child: ReorderableListView(
@@ -62,10 +79,8 @@ class _IntrayPageState extends State<IntrayPage> {
     });
   }
 
-  List<Task> getList() {
-    for (int i = 0; i < 100; i++) {
-      taskList.add(Task("Hello" + i.toString(), false, i.toString()));
-    }
-    return taskList;
-  }
+  // FutureList<Task> getList() async {
+  //   List<Task> tasks = await tasksBloc.getUserTasks(widget.apiKey);
+  //   return tasks;
+  // }
 }

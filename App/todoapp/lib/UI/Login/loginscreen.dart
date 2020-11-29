@@ -102,7 +102,7 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () {
                     if (usernameText.text != null ||
                         passwordText.text != null) {
-                      bloc.signinUser(usernameText.text, passwordText.text).then(() {
+                      userbloc.signinUser(usernameText.text, passwordText.text).then(() {
                         widget.login();
                         });
                     }

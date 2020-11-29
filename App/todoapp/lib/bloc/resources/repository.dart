@@ -20,6 +20,8 @@ class Repository {
     String password
     
   ) =>
-      moviesApiProvider.signinUser(
+      apiProvider.signinUser(
           username, password);
+
+  getUserTasks(String apiKey) {}
 }
