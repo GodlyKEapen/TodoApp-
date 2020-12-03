@@ -13,10 +13,14 @@ class IntrayPage extends StatefulWidget {
 
 class _IntrayPageState extends State<IntrayPage> {
   List<Task> taskList = [];
+  TaskBloc tasksBloc;
   // TaskBloc tasksBloc;
   @override
+  void initState() {
+    tasksBloc = TaskBloc(widget.apiKey);
+  }
+  @override
   void dispose() {
-    tasksBloc.dispose();
     super.dispose();
   }
 
@@ -28,7 +32,8 @@ class _IntrayPageState extends State<IntrayPage> {
         color: darkGreyColor,
         child: StreamBuilder(
             stream: tasksBloc.getTasks,
-            initialData: 0,
+            initialData: [],
+            // List<Task>(),
             builder: (context, snapshot) {
               taskList = snapshot.data;
               return _buildReorderableListSimple(context, taskList);

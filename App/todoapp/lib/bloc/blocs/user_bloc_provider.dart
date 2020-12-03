@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
 import 'package:todoapp/models/classes/task.dart';
-
 import '../resources/repository.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:todoapp/models/classes/user.dart';
 
 class UserBloc {
+  
   final _repository = Repository();
   final _userGetter = PublishSubject<User>();
 
@@ -32,36 +32,26 @@ class UserBloc {
 }
 
 class TaskBloc {
-  // final _repository = Repository();
+  final _repository = Repository();
   // final _taskGetter = PublishSubject<List<Task>>();
   final _taskSubject = BehaviorSubject<List<Task>>();
 
+  String apiKey;
+
   var _tasks = <Task>[];
 
-  TaskBloc() {
-    _updateTasks().then((_) {
+  TaskBloc(String api_key) {
+    this.apiKey = api_key;
+    _updateTasks(api_key).then((_) {
       _taskSubject.add(_tasks);
     });
   }
-  Future<Null> _updateTasks() {
-    
-  }
-  Stream<List<Task>> get tasks => _taskSubject.stream;
 
-  Observable<List<Task>> get getTasks => _taskGetter.stream;
+  Stream<List<Task>> get getTasks => _taskSubject.stream;
 
-  
-  Future<List<Task>> getUserTasks(String apiKey) async {
-    List<Task> tasks = await _repository.getUserTasks(apiKey);
-    _taskGetter.sink.add(tasks);
-    // return tasks;
-  }
-}
-
-  dispose() {
-    _taskGetter.close();
+  Future<List<Task>> _updateTasks(String apiKey) async {
+    return await _repository.getUserTasks(apiKey);
   }
 }
 
 final userbloc = UserBloc();
-final tasksBloc = TaskBloc();
