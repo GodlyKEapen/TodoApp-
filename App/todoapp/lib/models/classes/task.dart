@@ -11,5 +11,5 @@ class Task {
 
   Task(this.title, this.completed, this.taskId );
 
-  static Task fromJson(json_) {}
+  static Task fromJson(json) {}
 }
