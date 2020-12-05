@@ -20,7 +20,7 @@ class UserBloc {
 
   signinUser(
     String username,
-    String password, apiKey,
+    String password,
   ) async {
     User user = await _repository.signinUser(username, password);
     _userGetter.sink.add(user);
@@ -54,4 +54,4 @@ class TaskBloc {
   }
 }
 
-final userBloc = UserBloc();
+final userbloc = UserBloc();
