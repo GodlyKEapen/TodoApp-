@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:todoapp/models/Widgets/Intray_todo_widget.dart';
-import 'package:todoapp/models/classes/todoItem.dart';
-import 'package:todoapp/models/global.dart';
 import 'package:todoapp/bloc/blocs/user_bloc_provider.dart';
+import 'package:todoapp/models/classes/task.dart';
+import 'package:todoapp/models/global.dart';
+import 'package:todoapp/models/widgets/intray_todo_widget.dart';
 
 class IntrayPage extends StatefulWidget {
   final String apiKey;
@@ -14,7 +14,7 @@ class IntrayPage extends StatefulWidget {
 class _IntrayPageState extends State<IntrayPage> {
   List<Task> taskList = [];
   TaskBloc tasksBloc;
-  // TaskBloc tasksBloc;
+
   @override
   void initState() {
     tasksBloc = TaskBloc(widget.apiKey);
@@ -23,54 +23,62 @@ class _IntrayPageState extends State<IntrayPage> {
   void dispose() {
     super.dispose();
   }
-
   @override
   Widget build(BuildContext context) {
-    // taskList = getList();
     return Container(
-        padding: EdgeInsets.only(top: 250),
         color: darkGreyColor,
-        child: StreamBuilder(
-            stream: tasksBloc.getTasks,
-            initialData: [],
-            // List<Task>(),
+        child: StreamBuilder( // Wrap our widget with a StreamBuilder
+          stream: tasksBloc.getTasks, // pass our Stream getter here
+          initialData: [], // provide an initial data
             builder: (context, snapshot) {
-              taskList = snapshot.data;
-              return _buildReorderableListSimple(context, taskList);
-            })
-
-        //child: ReorderableListView(
-        //  children: todoItems,
-        //  onReorder: _onReorder,
+              if (snapshot.hasData && snapshot != null) {
+                  if (snapshot.data.length > 0) {
+                    return _buildReorderableListSimple(context, snapshot.data);
+                  }
+                  else if (snapshot.data.length==0){
+                    return Center(child: Text('No Data'));
+                  }
+                } else if (snapshot.hasError) {
+                  return Container();
+                }
+                return CircularProgressIndicator();
+            }, // access the data in our Stream here
+        )
+        // child: ReorderableListView(∆
+        //   padding: EdgeInsets.only(top: 300),
+        //   children: todoItems,
+        //   onReorder: _onReorder,
         // ),
         );
   }
 
   Widget _buildListTile(BuildContext context, Task item) {
     return ListTile(
-      key: Key(item.taskId),
+      key: Key(item.taskId.toString()),
       title: IntrayTodo(
         title: item.title,
       ),
     );
   }
 
-  Widget _buildReorderableListSimple(BuildContext context, List<Task> item) {
+  Widget _buildReorderableListSimple(
+    BuildContext context, List<Task> taskList) {
     return Theme(
       data: ThemeData(canvasColor: Colors.transparent),
       child: ReorderableListView(
-          // allowReordering: _reordering,
-          padding: EdgeInsets.only(top: 300),
-          children: taskList
-              .map((Task item) => _buildListTile(context, item))
-              .toList(),
-          onReorder: (oldIndex, newIndex) {
-            setState(() {
-              Task item = taskList[oldIndex];
-              taskList.remove(item);
-              taskList.insert(newIndex, item);
-            });
-          }),
+        // handleSide: ReorderableListSimpleSide.Right,
+        // handleIcon: Icon(Icons.access_alarm),
+        padding: EdgeInsets.only(top: 300.0),
+        children:
+            taskList.map((Task item) => _buildListTile(context, item)).toList(),
+        onReorder: (oldIndex, newIndex) {
+          setState(() {
+            Task item = taskList[oldIndex];
+            taskList.remove(item);
+            taskList.insert(newIndex, item);
+          });
+        },
+      ),
     );
   }
 
@@ -84,7 +92,7 @@ class _IntrayPageState extends State<IntrayPage> {
     });
   }
 
-  // FutureList<Task> getList() async {
+  // Future<List<Task>> getList() async {
   //   List<Task> tasks = await tasksBloc.getUserTasks(widget.apiKey);
   //   return tasks;
   // }

@@ -24,7 +24,9 @@ class AuthService with ChangeNotifier {
       {String firstName,
       String lastName,
       String email,
-      String password}) async {}
+      String password}) async {
+        
+      }
 
   // logs in the user if password matches
   Future loginUser({String email, String password}) {
@@ -37,4 +39,4 @@ class AuthService with ChangeNotifier {
       return Future.value(null);
     }
   }
-}  
+}

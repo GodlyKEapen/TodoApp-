@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:todoapp/bloc/blocs/user_bloc_provider.dart';
-import 'package:todoapp/models/classes/user.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:todoapp/models/classes/user.dart';
 import 'package:todoapp/models/global.dart';
@@ -9,7 +8,8 @@ class LoginPage extends StatefulWidget {
   final VoidCallback login;
   final bool newUser;
 
-  const LoginPage({Key key, this.login, this.newUser}) : super(key: key);
+  const LoginPage({Key key, this.login, this.newUser})
+      : super(key: key);
   @override
   _LoginPageState createState() => _LoginPageState();
 }
@@ -19,10 +19,8 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController usernameController = new TextEditingController();
   TextEditingController firstNameController = new TextEditingController();
   TextEditingController passwordController = new TextEditingController();
-
   @override
   Widget build(BuildContext context) {
-    User user;
     return Scaffold(
       backgroundColor: darkGreyColor,
       body: Center(
@@ -34,13 +32,12 @@ class _LoginPageState extends State<LoginPage> {
   Widget getSigninPage() {
     TextEditingController usernameText = new TextEditingController();
     TextEditingController passwordText = new TextEditingController();
-
     return Container(
       margin: EdgeInsets.only(top: 100, left: 20, right: 20, bottom: 100),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Text("Welcome !", style: bigLightBlueTitle),
+          Text("Welcome!", style: bigLightBlueTitle),
           Container(
             height: 200,
             child: Column(
@@ -95,16 +92,12 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 FlatButton(
-                  child: Text(
-                    "SignIn",
-                    style: redTodoTitle,
-                  ),
+                  child: Text("Sign in", style: redTodoTitle,),
                   onPressed: () {
-                    if (usernameText.text != null ||
-                        passwordText.text != null) {
-                      userbloc.signinUser(usernameText.text, passwordText.text).then(() {
+                    if (usernameText.text != null || passwordText.text != null) {
+                      userBloc.signinUser(usernameText.text, passwordText.text, "").then((_) {
                         widget.login();
-                        });
+                      });
                     }
                   },
                 )
@@ -112,20 +105,19 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
           Container(
-            child: Column(
+            child: 
+            Column(
               children: <Widget>[
-                Text(
-                  "Don't you even have an account yet?!",
-                  style: redText,
-                  textAlign: TextAlign.center,
-                ),
+                Text("Don't you even have an account yet?!", style: redText, textAlign: TextAlign.center,),
                 FlatButton(
                   child: Text("create one", style: redBoldText),
-                  onPressed: () {},
+                  onPressed: () {
+                    
+                  },
                 )
               ],
             ),
-          ),
+          )
         ],
       ),
     );
@@ -142,11 +134,11 @@ class _LoginPageState extends State<LoginPage> {
           ),
           TextField(
             controller: usernameController,
-            decoration: InputDecoration(hintText: "UserName"),
+            decoration: InputDecoration(hintText: "Username"),
           ),
           TextField(
             controller: firstNameController,
-            decoration: InputDecoration(hintText: "Frst name"),
+            decoration: InputDecoration(hintText: "First name"),
           ),
           TextField(
             controller: passwordController,
@@ -159,7 +151,7 @@ class _LoginPageState extends State<LoginPage> {
               if (usernameController.text != null ||
                   passwordController.text != null ||
                   emailController.text != null) {
-                userbloc
+                userBloc
                     .registerUser(
                         usernameController.text,
                         firstNameController.text ?? "",
