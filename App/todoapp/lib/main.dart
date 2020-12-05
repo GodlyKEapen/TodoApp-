@@ -1,13 +1,14 @@
-//import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'models/global.dart';
 import 'UI/Intray/Intray_page.dart';
 import 'package:todoapp/UI/Login/loginscreen.dart';
-import 'package:http/http.dart' as http;
+ import 'package:todoapp/bloc/resources/repository.dart';
+ import 'package:http/http.dart' as http;
 import 'package:todoapp/models/classes/user.dart';
 import 'package:todoapp/bloc/blocs/user_bloc_provider.dart';
+import 'package:todoapp/bloc/resources/api.dart';
 
 void main() => runApp(MyApp());
 
@@ -44,6 +45,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  String apiKey = "";
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -75,11 +77,20 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  // void signupPressed() {
-  //   setState(() {
-  //     build(context);
-  //   });
-  // }
+  Future signinUser() async {
+    String userName = "";
+    apiKey = await getApikey();
+    if (apiKey != null) {
+      if (apiKey.length > 0) {
+        userBloc.signinUser("", "", apiKey);
+      } else {
+        print("No api key");
+      }
+    } else {
+      apiKey = "";
+    }
+    return apiKey;
+  }
 
   Future getApikey() async {
     // print("Hello");
