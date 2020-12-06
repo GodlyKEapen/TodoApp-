@@ -1,0 +1,10 @@
+User:
+    String userId;
+    String apiKey;
+    String firstName;
+    String lastName;
+    String email;
+    String password;
+    
+SupportFile:
+    String text
