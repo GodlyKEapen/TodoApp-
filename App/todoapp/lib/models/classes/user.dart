@@ -1,29 +1,25 @@
 
 
-
-import 'package:flutter/rendering.dart';
-
 class User {
   String username;
   String lastname;
   String firstname;
-  String email;
+  String emailadress;
   String password;
   String api_key;
   int id;
 
-  User(this.username, this.lastname, this.firstname, this.email, this.password, this.id, this.api_key);
+  User(this.username, this.lastname, this.firstname, this.emailadress, this.password, this.api_key, this.id);
 
-  factory User.fromJson(Map<String, dynamic> parsedJson) {
+ factory User.fromJson(Map<String, dynamic> parsedJson) {
     return User(
       parsedJson['username'],
       parsedJson['lastname'],
-      parsedJson['emailadress'],
       parsedJson['firstname'],
+      parsedJson['emailadress'],
       parsedJson['password'],
-      parsedJson['id'],
-      parsedJson['api_key']
-      );
+      parsedJson['api_key'],
+      parsedJson['id']
+    );
   }
-
 }

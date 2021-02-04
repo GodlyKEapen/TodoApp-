@@ -2,12 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f523e54-9668-4bb5-86d7-7ec211a5bb48" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TodoBackend" beforeDir="false" afterPath="$PROJECT_DIR$/TodoBackend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoBackend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/TodoBackend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoBackend/migrations/versions/f71871fb062f_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoBackend/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/TodoBackend/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoBackend/resources/Register.py" beforeDir="false" afterPath="$PROJECT_DIR$/TodoBackend/resources/Register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoBackend/resources/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/TodoBackend/resources/task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/debug_android_application.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/flutter_assets.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/.dart_tool/flutter_build/bdc0b5d0805594f1577398e8d1b9ab47/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/.gradle/5.6.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/android/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/flutter/debug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/flutter/debug/flutter_build.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/flutter/debug/libs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/flutter/debug/libs.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/rOnCGz3ntoid1OABycmY_Yr+AeY=" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/rOnCGz3ntoid1OABycmY_Yr+AeY=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/incremental/debug-mergeNativeLibs/zip-cache/rOnCGz3ntoid1OABycmY_Yr+AeY=" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/incremental/debug-mergeNativeLibs/zip-cache/rOnCGz3ntoid1OABycmY_Yr+AeY=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/incremental/packageDebug/tmp/debug/zip-cache/Mn2xUSUefl8vgEFkWC8suyPSZJU=" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/incremental/packageDebug/tmp/debug/zip-cache/Mn2xUSUefl8vgEFkWC8suyPSZJU=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/merged_java_res/debug/out.jar" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/intermediates/merged_java_res/debug/out.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/kotlin/compileDebugKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/kotlin/compileDebugKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/kotlin/compileDebugKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/kotlin/compileDebugKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/build/shared_preferences/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/lib/UI/Intray/Intray_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/lib/UI/Intray/Intray_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/lib/bloc/blocs/user_bloc_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/lib/bloc/blocs/user_bloc_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/lib/bloc/resources/api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/lib/bloc/resources/api.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/todoapp/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/todoapp/lib/models/task.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +80,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$/App/todoapp" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="F:/Dart" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="SvnConfiguration">
@@ -56,18 +105,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="722" y="71" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1606717496410" />
-    <state x="555" y="55" key="SettingsEditor" timestamp="1606717460772">
+    <state x="0" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609759905692">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="555" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606717460772" />
+    <state x="0" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1609759905692" />
+    <state x="860" y="167" width="592" height="516" key="FileChooserDialogImpl" timestamp="1610341167655">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="860" y="167" width="592" height="516" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610341167655" />
+    <state x="555" y="55" key="SettingsEditor" timestamp="1609760138397">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="555" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609760138397" />
     <state x="860" y="100" width="583" height="624" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1606665714250">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="860" y="100" width="583" height="624" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.824@0.0.1536.824" timestamp="1606665714250" />
-    <state x="848" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1606717415180">
+    <state x="848" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1610341097101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="848" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1606717415180" />
+    <state x="848" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1610341097101" />
     <state x="814" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606717467658">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

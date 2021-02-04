@@ -1,7 +1,6 @@
-  
-
-
+import 'package:flutter/material.dart';
 import 'dart:convert';
+
 
 class Task {
   List<Task> tasks;
@@ -13,7 +12,7 @@ class Task {
   List<DateTime> reminders;
   int taskId;
   String title;
-  
+
   Task(this.title, this.completed, this.taskId, this.note);
 
   factory Task.fromJson(Map<String, dynamic> parsedJson) {
@@ -22,6 +21,6 @@ class Task {
       parsedJson['completed'],
       parsedJson['id'],
       parsedJson['note'],
-      );
+    );
   }
 }

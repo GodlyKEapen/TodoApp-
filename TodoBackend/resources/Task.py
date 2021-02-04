@@ -30,11 +30,11 @@ class Tasks(Resource):
                 result = Task.serialize(task)
                 return {"status": 'success', 'data' : result }, 201
             else:
-                return{"Message" : "No user with that api key!"}, 400
+                return{"Message" : "No user with that api key!"}, 402
 
     def get(self):
         result = []
-        #json_data = request.get_json(force=True)
+        # json_data = request.get_json(force=True)
         header = request.headers["Authorization"]
 
         if not header:

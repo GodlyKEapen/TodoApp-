@@ -12,4 +12,4 @@ api.add_resource(Register, '/register')
 
 api.add_resource(Signin, '/signin')
 
-api.add_resource(Tasks, '/Tasks')
+api.add_resource(Tasks, '/tasks')
